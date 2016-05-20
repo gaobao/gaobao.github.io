@@ -3,18 +3,30 @@
 <head>
   <meta charset="utf-8">
   
-  <title>test | HelloMyWorld</title>
+  <title>HelloMyWorld</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
+  <meta name="description" content="##回调
+
+软件模块之间总是存在这一定的接口，从调用的方式上可以把他们分为三类：同步调用，回调，异步调用
+
+-同步调用是一种阻塞模式调用，调用方在接口要等待对方执行完毕才返回，他是一种单项调用-回调是一种双向调用模式，被调用方在接口被调用时也会调用对方接口-异步调用是一种类似消息或事件的机制，不过他的调用方向刚好相反，接口的服务在收到目中讯息或发生目中事件时， 会主动通知客户方（即调用客户方的接口">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="http://hellomyworld.cc/2016/04/13/test/index.html">
+<meta property="og:title" content="HelloMyWorld">
+<meta property="og:url" content="http://hellomyworld.cc/2016/05/20/回调/index.html">
 <meta property="og:site_name" content="HelloMyWorld">
-<meta property="og:description">
-<meta property="og:updated_time" content="2016-04-13T01:09:52.789Z">
+<meta property="og:description" content="##回调
+
+软件模块之间总是存在这一定的接口，从调用的方式上可以把他们分为三类：同步调用，回调，异步调用
+
+-同步调用是一种阻塞模式调用，调用方在接口要等待对方执行完毕才返回，他是一种单项调用-回调是一种双向调用模式，被调用方在接口被调用时也会调用对方接口-异步调用是一种类似消息或事件的机制，不过他的调用方向刚好相反，接口的服务在收到目中讯息或发生目中事件时， 会主动通知客户方（即调用客户方的接口">
+<meta property="og:updated_time" content="2016-05-20T02:33:18.790Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
-<meta name="twitter:description">
+<meta name="twitter:title" content="HelloMyWorld">
+<meta name="twitter:description" content="##回调
+
+软件模块之间总是存在这一定的接口，从调用的方式上可以把他们分为三类：同步调用，回调，异步调用
+
+-同步调用是一种阻塞模式调用，调用方在接口要等待对方执行完毕才返回，他是一种单项调用-回调是一种双向调用模式，被调用方在接口被调用时也会调用对方接口-异步调用是一种类似消息或事件的机制，不过他的调用方向刚好相反，接口的服务在收到目中讯息或发生目中事件时， 会主动通知客户方（即调用客户方的接口">
   
     <link rel="alternative" href="/atom.xml" title="HelloMyWorld" type="application/atom+xml">
   
@@ -239,11 +251,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-回调" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/04/13/test/" class="article-date">
-      <time datetime="2016-04-13T01:09:52.000Z" itemprop="datePublished">2016-04-13</time>
+      <a href="/2016/05/20/回调/" class="article-date">
+      <time datetime="2016-05-20T02:35:31.717Z" itemprop="datePublished">2016-05-20</time>
 </a>
     </div>
   
@@ -252,28 +264,20 @@
       <input type="hidden" class="isFancy" />
     
     
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      test
-    </h1>
-  
-
-      </header>
-      
-      <div class="article-info article-info-post">
-        
-
-        
-        <div class="clearfix"></div>
-      </div>
-      
-    
     <div class="article-entry" itemprop="articleBody">
       
           
-        
+        <p>##回调</p>
+<blockquote>
+<p>软件模块之间总是存在这一定的接口，从调用的方式上可以把他们分为三类：同步调用，回调，异步调用</p>
+</blockquote>
+<p>-<strong>同步调用</strong>是一种阻塞模式调用，调用方在接口要等待对方执行完毕才返回，他是一种单项调用<br>-<strong>回调</strong>是一种双向调用模式，被调用方在接口被调用时也会调用对方接口<br>-<strong>异步调用</strong>是一种类似消息或事件的机制，不过他的调用方向刚好相反，接口的服务在收到目中讯息或发生目中事件时， 会主动通知客户方（即调用客户方的接口）。</p>
+<p>回调和异步调用的关系非常紧密，通常我们使用回调来实现异步消息的注册，通过异步条用来实现消息的通知，同步调用时三者中最建档的，而回调又常常是异步调用的基础，因此，下面我们讨论回调机制在不同软件架构中的实现</p>
+<p>对于不同类型的语言（如结构化语言和对象语言），平台（win32，jdk）或架构（corba，dcom，webservice），客户和服务的交互除了同步方式之外，都需要具备一定的异步通知机制，让服务方（或接口提供方）在木屑情况下能够主动通知客户，而回调是实现异步的最简单的途径</p>
+<p>对于一般的结构化语言，可以通过回调函数来实现回调。回调函数也是一个函数或过程，不过他是一个有调用方自己实现，供被调用方使用的特殊函数。<br>在面向对象的语言中，回调则是通过接口或抽象类来实现的，我们把实现这种接口的类称为回调类，回调类的对象成为回调对象。对于像c++或object pascal 这些兼容过程特性的对象语言，不仅仅提供了回调对象，回调方法等特性，也能兼容过程语言的回调函数机制。</p>
+<p>windows平台的消息机制也可以看做是毁掉的一种应用，我们通过系统提供的接口注册消息处理函数（即回调函数），从而实现接口，吃力消息的目的。由于windows平台的api是用c语言来构建的，我们可以认为它也是回调函数的一个特例。</p>
+<p>对于分布式组件代理体系CORBA,异步处理有多重方式，如回调，事件服务，通知服务等。事假服务和通知服务是corba用来处理异步消息的标准服务，他们主要负责消息的处理，派发，维护等工作，对一些简单的异步处理过程，我们可以通过回调机制来实现。</p>
+
       
     </div>
     
@@ -281,13 +285,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/04/13/test/">test</a></p>
+        <p><span>本文标题:</span><a href="/2016/05/20/回调/"></a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">gaoxu</a></p>
-        <p><span>发布时间:</span>2016-04-13, 09:09:52</p>
-        <p><span>最后更新:</span>2016-04-13, 09:09:52</p>
+        <p><span>发布时间:</span>2016-05-20, 10:35:31</p>
+        <p><span>最后更新:</span>2016-05-20, 10:33:18</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/04/13/test/" title="test">http://hellomyworld.cc/2016/04/13/test/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://hellomyworld.cc/2016/04/13/test/　　作者: gaoxu" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/05/20/回调/" title="">http://hellomyworld.cc/2016/05/20/回调/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://hellomyworld.cc/2016/05/20/回调/　　作者: gaoxu" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -299,16 +303,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/05/17/about/">
-                    about
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/04/12/hello-world/">
-                    Hello World
+                <a href="/2016/05/17/about/">
+                    about
                 </a>
             </div>
         
@@ -376,7 +374,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"test　| HelloMyWorld　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"　| HelloMyWorld　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -392,7 +390,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/04/13/test/" data-title="test" data-url="http://hellomyworld.cc/2016/04/13/test/"></div>
+    <div class="ds-thread" data-thread-key="2016/05/20/回调/" data-title="" data-url="http://hellomyworld.cc/2016/05/20/回调/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -416,15 +414,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/17/about/" title="上一篇: about">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/04/12/hello-world/" title="下一篇: Hello World">
+            <a href="/2016/05/17/about/" title="下一篇: about">
                 <i class="fa fa-angle-right"></i>
             </a>
         
