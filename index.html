@@ -299,6 +299,101 @@
 
 
   
+    <article id="post-php再学习1" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/24/php再学习1/" class="article-date">
+      <time datetime="2016-05-24T06:11:37.158Z" itemprop="datePublished">2016-05-24</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/24/php再学习1/">php再学习1</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>##strpos (查找字符串首次出现的位置 )</p>
+<blockquote>
+<p>  mixed  strpos  ( string $haystack  , mixed  $needle  [, int $offset  = 0  ] )<br>返回 needle 在 haystack 中首次出现的数字位置。 </p>
+</blockquote>
+<p>###参数介绍</p>
+<ul>
+<li>haystack （在该字符串中进行查找。）</li>
+<li>needle （如果needle不是一个字符串，那么他将被转换成整形并视为字符的顺序值）</li>
+<li>如果提供了此参数，搜索会从字符串该字符数的起始位置开始统计<br>###返回值<br>返回 needle 存在于 haystack 字符串起始的位置(独立于 offset)。同时注意字符串位置是从0开始，而不是从1开始的。 如果没找到 needle，将返回 FALSE 。 </li>
+</ul>
+<p>###example</p>
+<pre><code>&lt;?php
+$mystring  =  &apos;abc&apos; ;
+$findme    =  &apos;a&apos; ;
+$pos  =  strpos ( $mystring ,  $findme );
+ // 注意这里使用的是 ===。简单的 == 不能像我们期待的那样工作，
+// 因为 &apos;a&apos; 是第 0 位置上的（第一个）字符。
+if ( $pos  ===  false ) {
+    echo  &quot;The string &apos; $findme &apos; was not found in the string &apos; $mystring &apos;&quot; ;
+} else {
+    echo  &quot;The string &apos; $findme &apos; was found in the string &apos; $mystring &apos;&quot; ;
+    echo  &quot; and exists at position  $pos &quot; ;
+}
+?&gt; 
+</code></pre><p>##strtoupper （将字符串转化成大写）</p>
+<blockquote>
+<p>string strtoupper  ( string $string  )<br>将 string 中所有的字母字符转换为大写并返回。 </p>
+</blockquote>
+<p>##strtolower  （将字符串转化为小写 ）</p>
+<blockquote>
+<p>string strtolower  ( string $string  )<br>将 string 中所有的字母字符转换为小写并返回。</p>
+</blockquote>
+<p>##explode (使用一个字符串分割另一个字符串)</p>
+<blockquote>
+<p>array explode  ( string $delimiter  , string $string  [, int $limit  ] )<br>此函数返回由字符串组成的数组，每个元素都是 string 的一个子串，它们被字符串 delimiter 作为边界点分割出来。 </p>
+</blockquote>
+<p>###参数</p>
+<ul>
+<li>delimiter (分割字符)</li>
+<li>string (被分割字符串)</li>
+<li>limit (分割后的结果个数)<br>###返回值<br>返回由字符串组成的数组</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-回调" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
