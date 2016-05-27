@@ -15,7 +15,7 @@
 <meta property="og:description" content="软件模块之间总是存在这一定的接口，从调用的方式上可以把他们分为三类：同步调用，回调，异步调用
 
 -同步调用是一种阻塞模式调用，调用方在接口要等待对方执行完毕才返回，他是一种单项调用-回调是一种双向调用模式，被调用方在接口被调用时也会调用对方接口-异步调用是一种类似消息或事件的机制，不过他的调用方向刚好相反，接口的服务在收到目中讯息或发生目中事件时， 会主动通知客户方（即调用客户方的接口）。">
-<meta property="og:updated_time" content="2016-05-25T02:55:20.949Z">
+<meta property="og:updated_time" content="2016-05-25T03:00:34.284Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="概念 回调">
 <meta name="twitter:description" content="软件模块之间总是存在这一定的接口，从调用的方式上可以把他们分为三类：同步调用，回调，异步调用
@@ -281,8 +281,11 @@
 <p>-<strong>同步调用</strong>是一种阻塞模式调用，调用方在接口要等待对方执行完毕才返回，他是一种单项调用<br>-<strong>回调</strong>是一种双向调用模式，被调用方在接口被调用时也会调用对方接口<br>-<strong>异步调用</strong>是一种类似消息或事件的机制，不过他的调用方向刚好相反，接口的服务在收到目中讯息或发生目中事件时， 会主动通知客户方（即调用客户方的接口）。</p>
 <ul>
 <li><a id="more"></a>
-<the rest="" of="" contents="" |="" 余下全文=""><br>回调和异步调用的关系非常紧密，通常我们使用回调来实现异步消息的注册，通过异步条用来实现消息的通知，同步调用时三者中最建档的，而回调又常常是异步调用的基础，因此，下面我们讨论回调机制在不同软件架构中的实现</the></li>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+</the></li>
 </ul>
+<p>回调和异步调用的关系非常紧密，通常我们使用回调来实现异步消息的注册，通过异步条用来实现消息的通知，同步调用时三者中最建档的，而回调又常常是异步调用的基础，因此，下面我们讨论回调机制在不同软件架构中的实现</p>
 <p>对于不同类型的语言（如结构化语言和对象语言），平台（win32，jdk）或架构（corba，dcom，webservice），客户和服务的交互除了同步方式之外，都需要具备一定的异步通知机制，让服务方（或接口提供方）在木屑情况下能够主动通知客户，而回调是实现异步的最简单的途径</p>
 <p>对于一般的结构化语言，可以通过回调函数来实现回调。回调函数也是一个函数或过程，不过他是一个有调用方自己实现，供被调用方使用的特殊函数。<br>在面向对象的语言中，回调则是通过接口或抽象类来实现的，我们把实现这种接口的类称为回调类，回调类的对象成为回调对象。对于像c++或object pascal 这些兼容过程特性的对象语言，不仅仅提供了回调对象，回调方法等特性，也能兼容过程语言的回调函数机制。</p>
 <p>windows平台的消息机制也可以看做是毁掉的一种应用，我们通过系统提供的接口注册消息处理函数（即回调函数），从而实现接口，吃力消息的目的。由于windows平台的api是用c语言来构建的，我们可以认为它也是回调函数的一个特例。</p>
@@ -298,7 +301,7 @@
         <p><span>本文标题:</span><a href="/2016/05/20/回调/">概念 回调</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">gaoxu</a></p>
         <p><span>发布时间:</span>2016-05-20, 10:35:31</p>
-        <p><span>最后更新:</span>2016-05-25, 10:55:20</p>
+        <p><span>最后更新:</span>2016-05-25, 11:00:34</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/05/20/回调/" title="概念 回调">http://hellomyworld.cc/2016/05/20/回调/</a>
             <span class="copy-path" data-clipboard-text="原文: http://hellomyworld.cc/2016/05/20/回调/　　作者: gaoxu" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -314,8 +317,8 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/05/24/php再学习1/">
-                    php学习
+                <a href="/2016/05/24/说在前边的话/">
+                    说在前边的话
                 </a>
             </div>
         
@@ -424,7 +427,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/24/php再学习1/" title="上一篇: php学习">
+            <a href="/2016/05/24/说在前边的话/" title="上一篇: 说在前边的话">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -436,7 +439,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/说在前边的话/">说在前边的话</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/php再学习1/">php学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/20/回调/">概念 回调</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/27/vpn推荐/">vpn推荐</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/php再学习1/">php学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/说在前边的话/">说在前边的话</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/20/回调/">概念 回调</a></li></ul>
 
 
 
