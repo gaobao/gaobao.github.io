@@ -18,7 +18,7 @@
     <link rel="alternative" href="/atom.xml" title="HelloMyWorld" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/hellomyworld.ico">
   
   
       <link href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" rel="stylesheet">
@@ -125,13 +125,13 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜單</li>
-                        <li>標籤</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
-                        <li>友情鏈接</li>
+                        <li>Friends</li>
                         
                         
-                        <li>關於我</li>
+                        <li>About Me</li>
                         
                     </ul>
                 </div>
@@ -178,8 +178,6 @@
                       <a target="_blank" class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
                     
                       <a target="_blank" class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
-                    
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
                     
                     </div>
                 </section>
@@ -237,9 +235,69 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="標籤" friends="友情鏈接" about="關於我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-前端代码规范" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/03/前端代码规范/" class="article-date">
+      <time datetime="2016-06-03T07:28:57.000Z" itemprop="datePublished">2016-06-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/03/前端代码规范/">前端代码规范</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="前端代码规范"><a href="#前端代码规范" class="headerlink" title="前端代码规范"></a>前端代码规范</h1><blockquote>
+<p>此处只列出资源<br><a href="http://front-end-standards.com/" target="_blank" rel="external">Front End Standards</a><br><a href="http://alloyteam.github.io/CodeGuide/" target="_blank" rel="external">http://alloyteam.github.io/CodeGuide/</a><br><a href="http://coderlmn.github.io/code-standards/" target="_blank" rel="external">isobar</a></p>
+</blockquote>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-php代码规范" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -287,7 +345,7 @@
 
       
         <p class="article-more-link">
-          <a href="/2016/06/03/php代码规范/#more">查看全文 >></a>
+          <a href="/2016/06/03/php代码规范/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -367,6 +425,73 @@
 
 
   
+    <article id="post-回调" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/24/回调/" class="article-date">
+      <time datetime="2016-05-24T06:28:34.000Z" itemprop="datePublished">2016-05-24</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/24/回调/">概念学习 回调</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <h1 id="回调"><a href="#回调" class="headerlink" title="回调"></a>回调</h1><blockquote>
+<p>软件模块之间总是存在这一定的接口，从调用的方式上可以把他们分为三类：同步调用，回调，异步调用</p>
+</blockquote>
+<p>-<strong>同步调用</strong>是一种阻塞模式调用，调用方在接口要等待对方执行完毕才返回，他是一种单项调用<br>-<strong>回调</strong>是一种双向调用模式，被调用方在接口被调用时也会调用对方接口<br>-<strong>异步调用</strong>是一种类似消息或事件的机制，不过他的调用方向刚好相反，接口的服务在收到目中讯息或发生目中事件时， 会主动通知客户方（即调用客户方的接口）。</p>
+<ul>
+<li>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/回调/">回调</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/概念/">概念</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2016/05/24/回调/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-php再学习1" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -417,7 +542,7 @@
 
       
         <p class="article-more-link">
-          <a href="/2016/05/24/php再学习1/#more">查看全文 >></a>
+          <a href="/2016/05/24/php再学习1/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -485,74 +610,7 @@
 
       
         <p class="article-more-link">
-          <a href="/2016/05/24/说在前边的话/#more">查看全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-回调" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/05/24/回调/" class="article-date">
-      <time datetime="2016-05-24T06:28:34.000Z" itemprop="datePublished">2016-05-24</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/24/回调/">概念学习 回调</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h1 id="回调"><a href="#回调" class="headerlink" title="回调"></a>回调</h1><blockquote>
-<p>软件模块之间总是存在这一定的接口，从调用的方式上可以把他们分为三类：同步调用，回调，异步调用</p>
-</blockquote>
-<p>-<strong>同步调用</strong>是一种阻塞模式调用，调用方在接口要等待对方执行完毕才返回，他是一种单项调用<br>-<strong>回调</strong>是一种双向调用模式，被调用方在接口被调用时也会调用对方接口<br>-<strong>异步调用</strong>是一种类似消息或事件的机制，不过他的调用方向刚好相反，接口的服务在收到目中讯息或发生目中事件时， 会主动通知客户方（即调用客户方的接口）。</p>
-<ul>
-<li>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/回调/">回调</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/概念/">概念</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/05/24/回调/#more">查看全文 >></a>
+          <a href="/2016/05/24/说在前边的话/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -585,14 +643,14 @@
                 2016 gaoxu
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、簡潔且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="簡而不減 Hexo 雙欄博客主題">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >本站到訪數: 
+                        <span id="site-visit" >Site Visitors: 
                             <span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -602,7 +660,7 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">本頁閱讀量: 
+                        <span id="page-visit">Page Hits: 
                             <span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
@@ -635,9 +693,9 @@
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回頂部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" title="查看評論"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="轉到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
